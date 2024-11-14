@@ -6,15 +6,15 @@ function App() {
   const [intervalTracker, setIntervalTracker] = useState(-1);
   const [time, setTime] = useState(0);
   const format = (t)=>{
-    const min = String(Math.floor(time/60)).padStart(2,0);
+    const min = String(Math.floor(time/60));
     const sec = String(time%60).padStart(2,0);
     return `${min}:${sec}`;
 
   }
 
   return (
-    <div class="App">
-      <h1>StopWatch</h1>
+    <div>
+      <h1>Stopwatch</h1>
       <p>Time: {format(time)}</p>
       {
         intervalTracker==-1?
