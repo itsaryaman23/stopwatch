@@ -21,7 +21,7 @@ function App() {
         <button onClick = {()=>{
           let t = setInterval(()=>{
             setTime(t=>t+1);
-          },100)
+          },1000)
           setIntervalTracker(t);
         }}>Start</button>
         :
